@@ -1,4 +1,5 @@
-import styles from './SecondHeader.module.css'
+import { NavLink } from 'react-router-dom';
+import styles from './SecondHeader.module.css';
 
 export default function SecondHeader() {
     return (
@@ -9,13 +10,48 @@ export default function SecondHeader() {
                     <p className={styles.logoText}>Федерация фехтования<br />оренбургской области</p>
                 </div>
                 <div className={styles.rightSide}>
-                    <p className={styles.headerButton}>главная</p>
-                    <p className={styles.headerButton}>Федерация</p>
-                    <p className={styles.headerButton}>Соревнования</p>
-                    <p className={styles.headerButton}>Сборная орб</p>
-                    <p className={styles.headerButton}>клуб</p>
+                    <NavLink 
+                        to="/" 
+                        className={({ isActive }) => 
+                            isActive ? `${styles.headerButton} ${styles.active}` : styles.headerButton
+                        }
+                    >
+                        главная
+                    </NavLink>
+                    <NavLink 
+                        to="/federation" 
+                        className={({ isActive }) => 
+                            isActive ? `${styles.headerButton} ${styles.active}` : styles.headerButton
+                        }
+                    >
+                        Федерация
+                    </NavLink>
+                    <NavLink 
+                        to="/competitions" 
+                        className={({ isActive }) => 
+                            isActive ? `${styles.headerButton} ${styles.active}` : styles.headerButton
+                        }
+                    >
+                        Соревнования
+                    </NavLink>
+                    <NavLink 
+                        to="/team" 
+                        className={({ isActive }) => 
+                            isActive ? `${styles.headerButton} ${styles.active}` : styles.headerButton
+                        }
+                    >
+                        Сборная ОРБ
+                    </NavLink>
+                    <NavLink 
+                        to="/club" 
+                        className={({ isActive }) => 
+                            isActive ? `${styles.headerButton} ${styles.active}` : styles.headerButton
+                        }
+                    >
+                        Клуб
+                    </NavLink>
                 </div>
             </div>
         </div>
-    )
-};
+    );
+}

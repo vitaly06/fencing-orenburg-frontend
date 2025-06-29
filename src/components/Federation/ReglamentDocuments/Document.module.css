@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.document{
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #F6F7F3;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #707276;
+    text-transform: uppercase;
+}

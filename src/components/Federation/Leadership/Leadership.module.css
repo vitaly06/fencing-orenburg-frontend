@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.leadership{
+    width: 1200px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.hr{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 10px auto;
+}
+
+.leadership img{
+    margin-bottom: 10px;
+}
+
+.underImg{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+    line-height: 0;
+}
