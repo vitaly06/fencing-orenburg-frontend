@@ -10,11 +10,10 @@
 
 .slider {
   display: flex;
-  height: 500px; /* Вы можете изменить высоту по своему усмотрению */
+  height: 500px; 
   gap: 20px;
 }
 
-/* Левая часть - большое изображение */
 .leftSide {
   flex: 1;
   position: relative;

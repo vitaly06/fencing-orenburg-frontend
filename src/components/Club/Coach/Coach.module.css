@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.coachs{
+    display: flex;
+    flex-direction: column;
+    margin: 65px auto 0 auto;
+    width: 1200px;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+.hr{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border: none;
+    margin: 10px auto;
+}
+
+.cards{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
